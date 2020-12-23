@@ -51,7 +51,7 @@ class App extends Component {
     }
     return (
       <div className='App'>
-        <p>{this.state.hours}:{this.state.minutes}:{this.state.seconds}</p>
+        <p>{String(this.state.hours).padStart(2,0)}:{String(this.state.minutes).padStart(2,0)}:{String(this.state.seconds).padStart(2,0)}</p>
         <button onClick={this.toggleApp}>{this.state.show ? 'Hide' : 'Afficher'}</button>
         {content}
 
