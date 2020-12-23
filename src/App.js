@@ -36,7 +36,7 @@ class App extends Component {
 
         hours: prevsec.hours + 1
       }))
-    }, 360000);
+    }, 3600000);
   }
   render() {
     
